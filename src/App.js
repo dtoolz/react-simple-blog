@@ -1,11 +1,16 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { BrowserRouter } from 'react-router-dom'
 
-function App() {
-  return (
-    <div className="App">
-      <h1>dtoolz blog</h1>
-    </div>
-  );
+export default class App extends Component {
+  render() {
+    return (
+      <BrowserRouter>
+        <div>
+          <h1>dtoolz-blog</h1>
+        </div>
+      </BrowserRouter>
+      
+    )
+  }
 }
 
-export default App;
